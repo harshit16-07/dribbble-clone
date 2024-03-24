@@ -1,0 +1,432 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Noto+Serif+Armenian:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=Noto+Sans+Khojki&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family:'Poppins'
+}
+#page1{
+   /* background-color: rgb(49, 195, 195); */
+    height: fit-content;
+    width: 100%;
+}
+#page1 #nav{
+    height: 100px;
+    width: 100%;
+ /*background-color: red;*/
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 40px;
+}
+#nav1{
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav1 h4{
+    font-size: 14px;
+    font-weight:500;
+}
+#nav img{
+    height: 90px;
+    width: 120px;
+    background-position: center;
+}
+#nav2{
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#search{
+    height: 48px;
+    width: 300px;
+    background-color:#f4f5fb;
+    margin-right: 20px;
+    border-radius: 150px;
+    padding-left: 19px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+   justify-content: first baseline;
+}
+#search h4{
+  font-size: 14px;
+  font-weight: 400;
+  color: #8c8b96;
+  margin-left: 7px;
+
+}
+#ri-search-line{
+    color:#8c8b96;
+    font-size: 400;
+   
+}
+#nav2 button{
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 550;
+    border: none;
+    background-color: black;
+    color: white;
+}
+#nav2 button:nth-child(2)
+{
+   background-color: transparent;
+    color: black;
+}
+#content{
+    height: calc(100% - 100px);
+    width: 100%;
+  /*  background-color: yellow;*/
+  padding-top: 87px;
+ 
+}
+#content h3{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #e3b6ef;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 8px 15px;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   font-family: 'Source Serif 4, Georgia, serif';
+}
+#content h1{
+    margin-top: 33px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 400;
+    line-height: 80px;
+ 
+    
+}
+#content h4{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 19px;
+  font-weight: 500;
+}
+#content button{
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 550;
+    border: none;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px 0;
+}
+#bottom{
+    margin-top: 30px;
+    width: 100%;
+    height: 340px;
+  
+   padding: 5px;
+   white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+#bottom::-webkit-scrollbar{
+display: none;
+}
+.elem{
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100%;
+    width: 255px;
+    background-color: coral;
+    display: inline-block;
+    border-radius: 35px;
+    overflow: hidden;
+    position: relative;
+ 
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.elem video{
+    height: 100%;
+    width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page2{
+ 
+    height: fit-content;
+    width: 100%;
+
+}
+#explore{
+
+   padding-top: 90px;
+
+}
+#explore h1{
+    text-align: center;
+    font-family: 'IBM Plex Sans Devanagari';
+    font-size: 50px;
+    font-weight: 400;
+}
+#collection{
+   margin-top: 40px;
+    display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.elem2{
+    height: 280px;
+    width: 350px;
+    background-color: yellow;
+    
+  overflow: hidden;
+    border-radius: 10px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+
+}
+.elem2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#explore h3{
+  
+    margin-top: 40px;
+    margin-bottom:140px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 25px;
+
+}
+#page3{
+   height: fit-content;
+    width: 100%;
+    background-color: #ffda79;
+    padding-bottom: 120px;
+}
+#page3 h1{
+    padding-top: 120px;
+    text-align: center;
+ font-family: 'Libre Baskerville';
+    font-size: 58px;
+    font-weight: 400;
+    line-height:72px;
+  
+     
+}
+#page3 h4{
+    margin-top: 20px;
+    text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 35px;
+}
+#designer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#designer button{
+    font-size: 14px;
+    padding: 17px 22px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    font-weight: 600;
+}
+#designer button:nth-child(2)
+{
+    font: weight 600px;
+    font-size: 14px;
+    padding: 17px 22px;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    border-color: transparent;
+}
+#ask{
+   padding-top: 30px;
+}
+#page4{
+    width: 100%;
+    height: fit-content;
+   
+
+}
+#images2{
+    width: 100%;
+    height: fit-content;
+   /* background-color: plum;*/
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 20px;
+
+}
+.elem3{
+    flex-shrink: 0;
+    
+    
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    /*background-color: aquamarine;*/
+    position: relative;
+    overflow: hidden;
+
+}
+.elem3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    
+}
+.elem3 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#images2::-webkit-scrollbar{
+    display: none;
+}
+#end-nav{
+    width: 100%;
+  height: fit-content;
+    /*background-color: cadetblue;*/
+ display: flex;
+ justify-content: center;
+   margin-top: 20px;
+}
+#end-nav-1{
+    height: fit-content;
+    width:75% ;
+  /*  background-color: #bebaab;*/
+    padding-top: 30px;
+    padding-left: 225px;
+    display: flex;
+   
+    gap: 40px;
+    align-items: center;
+}
+#end-nav-1 img{
+    height: 90px;
+    width: 120px;
+    margin-right: 40px;
+    background-position: center; 
+}
+
+#end-nav-1 h3{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+#end-nav-2{
+    padding-left: 20px;
+    width: 25%;
+    height: fit-content;
+   /* background-color: mediumorchid;*/
+    display: flex;
+    padding-top: 65px;
+    align-items: center;
+}
+#end-nav-2 i{
+    font-size: 22px;
+    margin: 0 7px;
+}
+#final{
+    margin-top: 50px;
+   padding-left: 225px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right:255px;
+    padding-bottom: 40px;
+    
+}
+#final-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   gap: 20px;
+}
+#final-1 h4{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: gray;
+    gap: 20px;
+}
+#final-2{
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   gap: 20px;
+}
+#final-2 h4{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: gray;
+}
+
+
